@@ -3,10 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package project_18_10_19;
+package biblioteca;
 
-import bibblioteca.Book;
-import bibblioteca.Library;
 
 /**
  *
@@ -74,7 +72,7 @@ public class Main {
         //Book temp = new Book();
         //temp.setTitle(" ");
         
-        System.out.println(foundIt);
+        System.out.println(findIt); // sto cercando...
         
          for(Book temp : libA.getBooks().values()){
                if(temp.getTitle().toString().compareTo(findIt) == 0) {
@@ -86,7 +84,7 @@ public class Main {
             }     
             
          }
-         for(Book temp : libA.getBooks().values()){
+         for(Book temp : libB.getBooks().values()){
              if(temp.getTitle().toString().compareTo(findIt) == 0) {
                  foundIt.setTitle(temp.getTitle());
                  foundIt.setWriter(temp.getWriter());
@@ -96,7 +94,7 @@ public class Main {
             }        
             
          }
-          for(Book temp : libA.getBooks().values()){
+          for(Book temp : libC.getBooks().values()){
              if(temp.getTitle().toString().compareTo(findIt) == 0) {
                  foundIt.setTitle(temp.getTitle());
                  foundIt.setWriter(temp.getWriter());
@@ -107,7 +105,7 @@ public class Main {
             
          }
           
-         System.out.println(foundIt.printIt());
+         System.out.println(foundIt.printIt()); // trovato
          
         
     }
